@@ -148,7 +148,7 @@ class JRatingBar : View {
             unSelectColor = typeArray.getColor(R.styleable.JRatingBar_unSelectColor, resources.getColor(R.color.jRaingbar_unSelectColor))
 
             isTouch = typeArray.getInteger(R.styleable.JRatingBar_isTouch, TYPE_TOUCH)
-            defaultDistance = typeArray.getInteger(R.styleable.JRatingBar_distance, 10)
+            defaultDistance = typeArray.getDimension(R.styleable.JRatingBar_distance, 10f).toInt()
 
             drawShapeType = typeArray.getInteger(R.styleable.JRatingBar_drawShapeType, DRAW_STAR)
             defaultMin()
