@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="JRatingBar">
+        <attr name="maxProgress" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="starCount" format="integer" />
+        <attr name="unSelectIcon" format="reference" />
+        <attr name="selectIcon" format="reference" />
+        <attr name="distance" format="integer" />
+        <attr name="leftAndRightDistance" format="dimension" />
+        <attr name="TopAndBottomDistance" format="dimension" />
+        <attr name="starWidth" format="dimension" />
+        <attr name="starHeight" format="dimension" />
+        <attr name="selectColor" format="color"/>
+        <attr name="unSelectColor" format="color"/>
+        <attr name="isTouch" format="enum">
+            <enum name="touch" value="0" />
+            <enum name="click" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="drawShapeType" format="enum">
+            <enum name="draw_bitmap" value="0" />
+            <enum name="draw_start" value="1" />
+            <enum name="draw_trigon" value="2" />
+            <enum name="draw_rect" value="3" />
+            <enum name="draw_circle" value="4" />
+            <enum name="draw_heart" value="5" />
+        </attr>
+    </declare-styleable>
+</resources>
