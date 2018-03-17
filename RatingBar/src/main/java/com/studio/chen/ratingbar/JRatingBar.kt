@@ -37,8 +37,15 @@ class JRatingBar : View {
     private var selectPen = Paint()      //选中画笔
     private var unSelectPen = Paint()     //未选中画笔
     private var selectColor: Int = resources.getColor(R.color.jRaingbar_selectColor)    //选中颜色
+        private set(value){
+            field = value
+            selectPen.color = selectColor
+        }
     private var unSelectColor: Int = resources.getColor(R.color.jRaingbar_unSelectColor)     //未选中颜色
-
+        private set(value){
+            field = value
+            unSelectPen.color = unSelectColor
+        }
     private var starRects = mutableListOf<Rect>()     //星星个框框的集合
     var progress = 0           //当前值
         private set
