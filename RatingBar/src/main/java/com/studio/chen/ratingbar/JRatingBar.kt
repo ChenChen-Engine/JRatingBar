@@ -79,12 +79,12 @@ class JRatingBar : View {
     private lateinit var selectBitmap: Bitmap //选中的Bitmap
     private lateinit var unSelectBitmap: Bitmap //未选中的Bitmap
 
-    private var newWidth = 0    //每个Rect的宽
+    private var newWidth = 1    //每个Rect的宽
         get() {
             return (width - ((starCount - 1) * defaultDistance) - (leftAndRightDistance * 2) - paddingLeft - paddingRight) / starCount
         }
 
-    private var newHeight = 0 //每个Rect的高
+    private var newHeight = 1 //每个Rect的高
         get() {
             return height - (topAndBottomDistance * 2)
         }
