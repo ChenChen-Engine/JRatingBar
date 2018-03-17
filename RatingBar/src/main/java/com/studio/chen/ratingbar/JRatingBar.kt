@@ -101,8 +101,10 @@ class JRatingBar : View {
 
     var drawShapeType = DRAW_STAR           //绘制形状，形状和bitmap二选一，当状态不为-1的时候设置drawShape为null
         private set(value) {
+            if(value!=-1){
+                drawShape = null
+            }
             field = value
-            drawShape = null
         }
 
     var starCount = 5       //默认星星数量，当修改星星数的时候会去添加同样数量的框框
